@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Table of Contents</title>
+    <style>
+        /* Basic layout for two columns */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+        }
+
+        .content {
+            flex: 3;
+            padding: 20px;
+            max-width: 70%;
+        }
+
+        .toc {
+            flex: 1;
+            padding: 20px;
+            position: sticky;
+            top: 20px;
+            height: fit-content;
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .toc h3 {
+            margin-top: 0;
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        .toc ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .toc ul li {
+            margin: 10px 0;
+        }
+
+        .toc ul li a {
+            text-decoration: none;
+            color: #0078d4;
+        }
+
+        .toc ul li a:hover {
+            text-decoration: underline;
+            color: #0056b3;
+        }
+
+        h2 {
+            margin-top: 1.5em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <!-- Left column with content -->
+    <div class="content">
+        <h2 id="chapter1">Chapter 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+
+        <h2 id="chapter2">Chapter 2</h2>
+        <p>Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam.</p>
+
+        <h2 id="chapter3">Chapter 3</h2>
+        <p>Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna.</p>
+
+        <h2 id="chapter4">Chapter 4</h2>
+        <p>Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem.</p>
+    </div>
+
+    <!-- Right column with Table of Contents -->
+    <div class="toc">
+        <h3>Table of Contents</h3>
+        <ul>
+            <li><a href="#chapter1">Chapter 1</a></li>
+            <li><a href="#chapter2">Chapter 2</a></li>
+            <li><a href="#chapter3">Chapter 3</a></li>
+            <li><a href="#chapter4">Chapter 4</a></li>
+        </ul>
+    </div>
+</body>
+</html>
